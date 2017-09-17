@@ -1,0 +1,39 @@
+{
+    "manifest_version": 1,
+    "version": 2,
+    "type": "APP",
+    "name": {
+        "ja": "年齢表示プラグイン",
+        "en": "Birthday to age plugin",
+        "zh": "年龄显示插件"
+    },
+    "description": {
+        "ja": "誕生日から、年齢を表示します",
+        "en": "This plugin show your age from your birthday",
+        "zh": "从你的生日，显示你的年龄"
+    },
+    "icon": "image/icon.png",
+    "homepage_url": {
+        "ja": "https://h2o-space.com",
+        "en": "https://h2o-space.com",
+        "zh": "https://h2o-space.com"
+    },
+    "desktop": {
+        "js": [
+            "https://js.cybozu.com/jquery/1.11.1/jquery.min.js",
+            "js/birth_to_age.js"
+        ]
+    },
+    "config": {
+        "html": "html/check_config.html",
+        "js": [
+            "https://js.cybozu.com/jquery/1.11.1/jquery.min.js",
+            "js/config.js"
+        ],
+        "css": [
+                "css/check_config.css",
+                "css/51-modern-default.css"
+        ],
+        "required_params": ["birth", "age"]
+    }
+}
